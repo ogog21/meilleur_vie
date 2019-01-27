@@ -6,7 +6,7 @@
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 10%;
+    margin-top: 9%;
     width: 450px;
     height: 350px;
 }
@@ -31,4 +31,9 @@
 }
 .champs-nom {
     text-decoration: underline;
+}
+#vers_creation {
+    padding-left: 90%;
+    text-decoration: none;
+    color:rgb(38, 0, 255);
 }

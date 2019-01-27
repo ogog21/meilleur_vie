@@ -1,0 +1,54 @@
+#main {
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 1px 1px 50px rgb(241, 145, 245);
+    background-color: rgb(253, 183, 255);
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 9%;
+    width: 450px;
+    height: 385px;
+}
+#connexion {
+    border : 1px solid black;
+    border-radius: 5px;
+    background-color: aquamarine;
+    margin-top: 5%;
+    margin-left: 65%;
+    width: 130px;
+    height: 40px;
+    font-weight: bold;
+}
+#formulaire {
+    margin-top: 5%;
+}
+.champs-texte {
+    width: 200px;
+    height: 20px;
+    border : 1px solid;
+    border-radius: 5px;
+}
+.champs-nom {
+    text-decoration: underline;
+}
+#error {
+    color:red;
+}
+#message {
+    color:green;
+}
+#info {
+    border:1px solid white;
+    border-radius: 5px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    display: table;
+    padding: 1px;
+}
+#vers_index {
+    padding-right: 88%;
+    text-decoration: none;
+    color:rgb(38, 0, 255);
+}
