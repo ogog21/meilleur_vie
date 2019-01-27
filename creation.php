@@ -22,25 +22,6 @@ $bdd = new PDO('mysql:host=localhost;dbname=meilleur_vie','root','password');
 </head>
 <body>
     <p><a href="index.php" id="vers_index"><<< Retour</a></p>
-    <?php
-        $message = "";
-        $error = "";
-        if(!empty($_POST['identifiant']) && !empty($_POST['motdepasse'])){
-
-            $requete = $bdd->prepare('INSERT INTO auth(identifiant,motdepasse) VALUES(:identifiant,:motdepasse)');
-            if($requete){
-                $requete->execute(array(
-                    'identifiant' => $_POST['identifiant'],
-                    'motdepasse' => password_hash($_POST['motdepasse'], PASSWORD_DEFAULT)
-                ));
-                $message = 'Succes';
-            }else {
-                $error = "Probleme pour execution de la requete";
-            }
-        }else {
-            $error = "Un des deux champs n'est pas rempli";
-        }
-    ?>
     <div id="main">
         <h1>Creation de compte</h1>
         <p>Module de creation</p>
@@ -60,6 +41,25 @@ $bdd = new PDO('mysql:host=localhost;dbname=meilleur_vie','root','password');
                 ?>
             </div>
             <input type="submit" value="Créer un compte" id="connexion">
+    <?php
+        $message = "";
+        $error = "";
+        if(!empty($_POST['identifiant']) && !empty($_POST['motdepasse'])){
+
+            $requete = $bdd->prepare('INSERT INTO auth(identifiant,motdepasse) VALUES(:identifiant,:motdepasse)');
+            if($requete){
+                $requete->execute(array(
+                    'identifiant' => $_POST['identifiant'],
+                    'motdepasse' => password_hash($_POST['motdepasse'], PASSWORD_DEFAULT)
+                ));
+                $message = 'Succes';
+            }else {
+                $error = "Probleme pour execution de la requete";
+            }
+        }else {
+            $error = "Un des deux champs n'est pas rempli";
+        }
+    ?>
         </form>
     </div>
 </body>
