@@ -1,0 +1,34 @@
+#main {
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 1px 1px 50px rgb(255, 215, 128);
+    background-color: antiquewhite;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    width: 450px;
+    height: 350px;
+}
+#connexion {
+    border : 1px solid black;
+    border-radius: 5px;
+    background-color: aquamarine;
+    margin-top: 5%;
+    margin-left: 70%;
+    width: 100px;
+    height: 40px;
+    font-weight: bold;
+}
+#formulaire {
+    margin-top: 5%;
+}
+.champs-texte {
+    width: 200px;
+    height: 20px;
+    border : 1px solid;
+    border-radius: 5px;
+}
+.champs-nom {
+    text-decoration: underline;
+}
