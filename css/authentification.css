@@ -8,15 +8,15 @@
     margin-right: auto;
     margin-top: 9%;
     width: 450px;
-    height: 350px;
+    height: 385px;
 }
 #connexion {
     border : 1px solid black;
     border-radius: 5px;
     background-color: aquamarine;
     margin-top: 5%;
-    margin-left: 70%;
-    width: 100px;
+    margin-left: 65%;
+    width: 130px;
     height: 40px;
     font-weight: bold;
 }
@@ -36,4 +36,26 @@
     padding-left: 90%;
     text-decoration: none;
     color:rgb(38, 0, 255);
+}
+#error {
+    color:red;
+    border:1px solid white;
+    border-radius: 5px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    display: table;
+    padding: 1px;
+    margin-top:4%;
+}
+#succes {
+    color:red;
+    border:1px solid white;
+    border-radius: 5px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    display: table;
+    padding: 1px;
+    margin-top:4%;
 }
